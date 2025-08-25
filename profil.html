@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobskers - Portal Kerja</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<style>
+
+  .footer-menu a {
+  line-height: 2; /* 2x lebih renggang dari normal */
+}
+.btn-outline-danger {
+  background-color: #ffffff;  /* warna normal */
+  color: #FF5C30;
+  border: solid 1px #FF5C30; /* garis tepi */
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff633843 ;
+  color: #2f2f2f; /* teks tetap merah */
+} 
+
+.btn-danger {
+  background-color: #FF5C30; /* warna normal */
+  color: #ffffff; /* teks putih */
+}
+.btn-danger:hover {
+  background-color: #ff5d3043; /* warna saat hover */
+  color: #323232; /* teks tetap putih */
+}
+</style>
+</head>
+<body style="background:#fafafa;">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+      <a class="navbar-brand fw-bold" href="#">JobSkers</a>
+    </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Job Search</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Lihat Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Komunitas</a></li>
+        </ul>
+      <div class="d-flex align-items-center">
+
+  <div class="dropdown me-3">
+    <a class="dropdown-toggle text-dark text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Nama Profil
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Lihat Profil</a></li>
+      <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item text-danger" href="#">Keluar</a></li>
+    </ul>
+  </div>
+
+    <!-- Tombol -->
+  <a href="#" class="btn btn-outline-danger">Untuk Perusahaan</a>
+</div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- baner -->
+   <section class="mb-4 py-5 mx-5 rounded" style="background:url(/img/backround2.png) center/cover no-repeat; position: relative;">
+  <div class="profile-header mx-5 text-white px-3 w-50 p-3">
+    <h4 class="mb-1 fw-bold">Nama User</h4>
+    <p class="mb-2">
+      <i class="bi bi-geo-alt"></i> Provinsi user <br>
+      <i class="bi bi-envelope"></i> alamatgmail@gmail.com
+    </p>
+    <div class="d-flex gap-2">
+      <button class="btn btn-light btn-sm">Ubah</button>
+      <button class="btn btn-outline-light btn-sm">Bagikan</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Konten -->
+<div class="container my-4">
+  <div class="row">
+    
+    <!-- Kiri -->
+    <div class="col-md-8">
+      
+      <!-- Ringkasan Pribadi -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Ringkasan Pribadi</h6>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+          <button class="btn btn-light btn-sm border">
+            <i class="bi bi-pencil"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Riwayat Karir -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Riwayat Karir</h6>
+        <p class="text-muted small">
+          Semakin Anda memberi tahu perusahaan mengenai pengalaman Anda, semakin Anda bisa tampil menonjol.
+        </p>
+        <button class="btn btn-outline-danger btn-sm">Tambah Jabatan</button>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Pendidikan</h6>
+        <button class="btn btn-outline-danger btn-sm">Tambah Pendidikan</button>
+      </div>
+
+      <!-- Lisensi & Sertifikasi -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Lisensi & Sertifikasi</h6>
+        <p class="text-muted small">
+          Tunjukkan kredensial profesional Anda. Tambahkan lisensi, sertifikat, keanggotaan, dan akreditasi relevan di sini.
+        </p>
+        <button class="btn btn-outline-danger btn-sm">Tambah lisensi atau sertifikasi</button>
+      </div>
+
+      <!-- Keahlian -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Keahlian</h6>
+        <button class="btn btn-outline-danger btn-sm">Tambah keahlian</button>
+      </div>
+
+      <!-- Bahasa -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Bahasa</h6>
+        <button class="btn btn-outline-danger btn-sm">Tambah bahasa</button>
+      </div>
+
+      <!-- Resume -->
+      <div class="mb-4 p-3 border rounded">
+        <h6 class="fw-bold">Resume</h6>
+        <div class="border rounded p-3 mb-3">
+          <p class="mb-1 small text-muted">
+            Unggah resume untuk lamaran dan akses mudah di mana pun Anda berada.
+          </p>
+          <button class="btn btn-outline-danger btn-sm">Tambah resume</button>
+        </div>
+        <button class="btn btn-danger btn-sm">Buat resume</button>
+      </div>
+      
+    </div>
+
+    <!-- Kanan -->
+    <div class="col-md-4">
+      <div class="mb-3 p-3 border rounded">
+        <h6 class="fw-bold">Visibilitas profil</h6>
+        <p class="text-muted small">Dapat dicari oleh perusahaan</p>
+      </div>
+      <div class="mb-3 p-3 border rounded">
+        <h6 class="fw-bold">Verifikasi</h6>
+        <p class="text-muted small">Tidak ada verifikasi</p>
+        <small class="text-muted">Profil yang memiliki verifikasi lebih berpeluang untuk dipilih.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Menu 4 Kolom -->
+<div class="row justify-content-center text-center">
+  <!-- Kolom 1 -->
+  <div class="col-md-3 col-6 mb-3">
+    <h6 class="fw-bold mb-2">Pencari kerja</h6>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Cari lowongan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Lihat profil</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Pencarian tersimpan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Lowongan tersimpan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Lamaran kerja</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Sumber daya karir</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Jelajahi karier</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Jelajahi gaji</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Jelajahi perusahaan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Komunitas</a>
+    <a href="#" class="d-block text-decoration-none text-muted small">Unduh aplikasi</a>
+  </div>
+
+  <!-- Kolom 2 -->
+  <div class="col-md-3 col-6 mb-4">
+    <h6 class="fw-bold mb-2">Perusahaan</h6>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Daftar gratis</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Pasang iklan lowongan kerja</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Produk & harga</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Layanan pelanggan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Saran perekrutan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Wawasan pasar</a>
+    <a href="#" class="d-block text-decoration-none text-muted small">Mitra perangkat lunak perekrutan</a>
+  </div>
+
+  <!-- Kolom 3 -->
+  <div class="col-md-3 col-6 mb-3">
+    <h6 class="fw-bold mb-2">Tentang kami</h6>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Tentang kami</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Ruang berita</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Investor</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Karir</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Mitra internasional</a>
+    <a href="#" class="d-block text-decoration-none text-muted small">Layanan mitra</a>
+  </div>
+
+  <!-- Kolom 4 -->
+  <div class="col-md-3 col-6 mb-3">
+    <h6 class="fw-bold mb-2">Kontak</h6>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Pusat bantuan</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Hubungi kami</a>
+    <a href="#" class="d-block text-decoration-none text-muted small mb-1">Blog produk & teknologi</a>
+    <a href="#" class="d-block text-decoration-none text-muted small">Media sosial</a>
+  </div>
+</div>
+
+
+
+
+  <!-- Footer Bottom -->
+  <div class="border-top">
+    <div class="container py-3 d-flex flex-column flex-md-row justify-content-between small text-muted">
+      <div>
+        <a href="#" class="text-decoration-none text-muted me-3">Persyaratan & Ketentuan</a>
+        <a href="#" class="text-decoration-none text-muted">Keamanan dan privasi</a>
+      </div>
+      <div class="mt-2 mt-md-0">
+        Hak cipta © 2025 Jobstreet
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
